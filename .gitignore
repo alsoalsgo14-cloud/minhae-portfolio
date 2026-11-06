@@ -1,0 +1,14 @@
+# 설치 파일 · 빌드 결과물 (GitHub가 자동으로 다시 만듦)
+node_modules
+dist
+
+# 원본 이미지 (용량이 커서 올리지 않음 — 웹용은 public/images 에 있음)
+images-src
+
+# 작업용 임시 폴더
+'$SP'
+
+# 기타
+.DS_Store
+Thumbs.db
+*.log
