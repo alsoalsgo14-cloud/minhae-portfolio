@@ -45,9 +45,11 @@ GitHub Pages에 올릴 때는 `vite.config.js`의 `base`를 저장소 이름으�
 | `campaigns/beentrill-ajobyajo/` | pc.jpg, mo.jpg | `ajo x bentrill/Group 4.jpg`, `Group 5.jpg` |
 | `campaigns/banners/` | 배너 4세트 × PC/MO | `기획전 배너/` — Group 3·6 = OUTLET COUPON DEAL, pc 3·mo 2 = CLEARANCE, pc 4·mo 3 = OUTLET WINTER, pc 5·mo 4 = WWB BIG SALE |
 | `ai-outfit/` | ai-outfit-01 ~ 14 | `image lab/ai outfit/` 순서: 10-1(WT001), 4, 9, BA262TS005CH, BA262TS007_SB, BA262TS010_LN, JP001_BK, JP001_LG 2, VA262TS013VL, VA262TS106BK, VU264RM001, VUHM00(2), VUTL002,PT003 (2), 여5 |
-| `ai-outfit/personal/` | personal-01 ~ 04 | `image lab/ai outfit/개인작업/` 1~4 |
-| `retouch/after/` | 보정본 8장 | `image lab/보정본/` |
-| `retouch/before/` | 보정 전 8장 | `image lab/원본/` — 보정본과 비율이 다른 5장(0903_12479, 12522, 12696, 12716, 1013_0797)은 보정본과 같은 구도로 잘라 BEFORE/AFTER 슬라이더가 정확히 겹치게 함 |
+| `ai-outfit/personal/` | personal-01 ~ 05 | `image lab/ai outfit/개인작업/` 1~5 |
+| `ai-outfit/lookbook/` | lookbook-01 ~ 10 | `image lab/ai outfit/룩북/` 1~11 (7번 없음) |
+| `ai-outfit/feed/` | feed-01 ~ 11 | `image lab/ai outfit/인스타 피드용/` 12, 13, 14, 15, 17, 20, 24, 28, 29, 32, 34 |
+| `retouch/after/` | 보정본 17장 (DSC_6120★.png → DSC_6120.jpg, ‘(보정)’ 표기는 파일명에서 뺌) | `image lab/보정본/` |
+| `retouch/before/` | 보정 전 17장 | `image lab/원본/` — 보정본과 비율이 다른 9장(0903_12479, 12522, 12696, 12716, 1013_0797, 1013_0483, DSC_6120, 6681, 6718)은 보정본과 같은 구도로 잘라 BEFORE/AFTER 슬라이더가 정확히 겹치게 함 |
 
 파일명은 웹 주소에서 문제가 없도록 영문·숫자·`-` 로 정리했습니다.
 

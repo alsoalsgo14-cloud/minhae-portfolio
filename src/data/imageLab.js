@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────
 // IMAGE LAB — AI 이미지 · 보정본 갤러리
 // · src     : images-src 기준 경로 (npm run images 로 처리). 썸네일은 4:5로 잘려 보이고, 확대하면 원본 비율.
-// · group   : 필터 구분 — 'ai' | 'personal' | 'retouch'
+// · group   : 필터 구분 — 'ai' | 'lookbook' | 'feed' | 'personal' | 'retouch'
 // · compare : true 이면 확대 뷰어에서 BEFORE / AFTER 비교 슬라이더
 //             (before.src / after.src — 두 이미지는 같은 구도·비율이어야 정확히 겹칩니다)
 // ─────────────────────────────────────────────
@@ -9,6 +9,8 @@
 export const labFilters = [
   { id: 'all', label: 'ALL' },
   { id: 'ai', label: 'AI OUTFIT' },
+  { id: 'lookbook', label: 'LOOKBOOK' },
+  { id: 'feed', label: 'SNS FEED' },
   { id: 'personal', label: 'PERSONAL' },
   { id: 'retouch', label: 'RETOUCH' },
 ];
@@ -31,7 +33,29 @@ const ai = aiFiles.map((f, i) => ({
   src: `ai-outfit/${f}`,
 }));
 
-const personalFiles = ['personal-01.png', 'personal-02.jpg', 'personal-03.jpg', 'personal-04.png'];
+// AI 룩북 (image lab/ai outfit/룩북 1~11, 7번 없음 → lookbook-01 ~ 10)
+const lookbook = Array.from({ length: 10 }, (_, i) => ({
+  id: `lookbook-${pad(i + 1)}`,
+  group: 'lookbook',
+  title: `LOOKBOOK ${pad(i + 1)}`,
+  note: 'AI 룩북 이미지',
+  src: `ai-outfit/lookbook/lookbook-${pad(i + 1)}.jpg`,
+}));
+
+// AI 인스타 피드용 (image lab/ai outfit/인스타 피드용 12 ~ 34 → feed-01 ~ 11)
+const feedFiles = [
+  'feed-01.jpg', 'feed-02.png', 'feed-03.png', 'feed-04.png', 'feed-05.png', 'feed-06.jpg',
+  'feed-07.png', 'feed-08.png', 'feed-09.png', 'feed-10.jpg', 'feed-11.jpg',
+];
+const feed = feedFiles.map((f, i) => ({
+  id: `feed-${pad(i + 1)}`,
+  group: 'feed',
+  title: `SNS FEED ${pad(i + 1)}`,
+  note: 'AI 이미지 · 인스타그램 피드',
+  src: `ai-outfit/feed/${f}`,
+}));
+
+const personalFiles = ['personal-01.png', 'personal-02.jpg', 'personal-03.jpg', 'personal-04.png', 'personal-05.png'];
 const personal = personalFiles.map((f, i) => ({
   id: `personal-${pad(i + 1)}`,
   group: 'personal',
@@ -41,7 +65,10 @@ const personal = personalFiles.map((f, i) => ({
 }));
 
 // 보정 전후 — before 는 보정본과 같은 구도로 맞춘 원본
-const retouchFiles = ['0903_12479', '0903_12522', '0903_12696', '0903_12716', '1013_0788', '1013_0797', '1013_0987', '1013_1007'];
+const retouchFiles = [
+  '0903_12479', '0903_12522', '0903_12696', '0903_12716', '1013_0788', '1013_0797', '1013_0987', '1013_1007',
+  '1013_0254', '1013_0274', '1013_0483', 'DSC_6086', 'DSC_6120', 'DSC_6681', 'DSC_6718', 'DSC_6911', 'DSC_6984',
+];
 const retouch = retouchFiles.map((f, i) => ({
   id: `retouch-${pad(i + 1)}`,
   group: 'retouch',
@@ -60,4 +87,4 @@ function interleave(...lists) {
   return out;
 }
 
-export const imageLab = interleave(ai.slice(0, 7), retouch.slice(0, 4), ai.slice(7), personal, retouch.slice(4));
+export const imageLab = interleave(ai, lookbook, retouch, feed, personal);
