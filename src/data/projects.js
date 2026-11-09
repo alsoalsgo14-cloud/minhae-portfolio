@@ -136,13 +136,28 @@ export const projects = [
     title: 'HOLLYS',
     category: '웹사이트 리디자인',
     specs: ['개인 작업', 'PC · MO'],
-    summary: null,
+    summary: '"작은 차이의 미학" — 할리스 커피 웹사이트 UX/UI 리디자인',
     preview: 'screen',
     cover: { src: 'personal/hollys/pc/01-index.jpg' },
     keyImage: { src: 'hero/hollys-mockup.jpg' },
     resultsLayout: 'site',
-    meta: { ...emptyMeta, type: '웹사이트 리디자인', kind: '개인 작업' },
-    sections: { ...emptySections },
+    meta: {
+      ...emptyMeta,
+      type: '웹사이트 리디자인',
+      kind: '개인 작업',
+      period: '2025.07',
+      // contribution(기여도)은 확인 후 입력
+    },
+    sections: {
+      overview:
+        '할리스 커피 공식 웹사이트 리디자인 프로젝트입니다. "커피의 즐거움을 만드는 작은 차이의 미학"을 콘셉트로, 브랜드 철학이 느껴지는 정보 구성과 세련된 비주얼, 메뉴 소개와 매장 경험을 하나로 연결해 할리스만의 프리미엄 캐주얼 감성을 강화했습니다.',
+      purpose:
+        '기존 사이트를 진단한 결과 와이드 해상도 대응 미흡, 작은 글자와 불명확한 위계로 인한 정보 전달력 저하, 정돈되지 않은 컬러 시스템, 좌측 고정 LNB로 좁아진 서브페이지, 낮은 이미지 품질이 문제로 드러났습니다. 시즌 메뉴와 매장 정보를 빠르게 찾을 수 있고, 커피 한 잔의 경험이 사이트 안에서도 이어지도록 사용자 중심으로 재설계하는 것을 목표로 했습니다.',
+      role: '사용성 진단 · 페르소나 설정 · AS IS / GAP / TO BE 개선안 도출 · 컬러와 서체 시스템 정의 · 메인과 서브페이지 PC / MO UI 디자인',
+      tools: [], // 사용 툴 확인 후 입력. 예: ['Figma', 'Photoshop']
+      direction:
+        'Consistency(브랜드 감성과 사용자 경험의 일관된 전달), Clarity(명확하고 직관적인 정보 구조), Emotion(프리미엄 감성과 따뜻한 분위기)을 세 가지 축으로 잡았습니다. 할리스 레드를 포인트로 크림과 브라운 톤을 더해 따뜻한 분위기를 만들고, 영문은 Archopada, 국문은 Noto Sans KR을 16px 이상으로 사용해 가독성을 확보했습니다. 반응형 레이아웃과 우선순위 기반의 비대칭 배치로 콘텐츠 집중도를 높였습니다.',
+    },
     results: site('personal/hollys', {
       pc: [
         ['01-index.jpg', 'INDEX'],
@@ -170,13 +185,28 @@ export const projects = [
     title: 'SK VIEW',
     category: '웹사이트 리디자인',
     specs: ['개인 작업', 'PC · MO'],
-    summary: null,
+    summary: '"복잡한 여정을 단순하게" — SK VIEW 웹사이트 UX/UI 개선 제안',
     preview: 'screen',
     cover: { src: 'personal/sk-view/pc/01-index.jpg' },
     keyImage: { src: 'hero/sk-view-mockup.jpg' },
     resultsLayout: 'site',
-    meta: { ...emptyMeta, type: '웹사이트 리디자인', kind: '개인 작업' },
-    sections: { ...emptySections },
+    meta: {
+      ...emptyMeta,
+      type: '웹사이트 리디자인',
+      kind: '개인 작업',
+      period: '2025.08',
+      // contribution(기여도)은 확인 후 입력
+    },
+    sections: {
+      overview:
+        'SK VIEW 공식 웹사이트 UX/UI 개선 제안 프로젝트입니다. "신뢰와 프리미엄을 전달하는 경험"을 주제로, 모바일 우선 설계와 정보 구조(IA) 재정비를 통해 분양 정보 전달력과 상담 전환을 함께 높이는 데 초점을 맞췄습니다.',
+      purpose:
+        '기존 사이트는 비주얼 중심 구성으로 분양 일정 · 평면 · 가격 같은 핵심 정보가 스크롤 아래로 밀리고, 깊은 메뉴 구조와 흩어진 상담 버튼, 모바일과 데스크톱 도메인 분리로 원하는 정보에 도달하기 어려웠습니다. "복잡한 여정을 단순하게, 더 빠른 길로 연결하다"를 목표로 분양 · 입주 · 상담 같은 주요 행동을 최소한의 클릭으로 할 수 있도록 재구성했습니다. (기대 효과: 모바일 이탈률 -15%, 상담 전환율 +20%, 정보 도달 시간 -30%)',
+      role: '현황 분석과 벤치마킹 · 페르소나 4종과 사용자 여정 맵 작성 · 정보 구조(IA) 재설계 · 컬러와 서체 시스템 정의 · 메인과 서브페이지 PC / MO UI 디자인',
+      tools: [], // 사용 툴 확인 후 입력. 예: ['Figma', 'Photoshop']
+      direction:
+        '브랜드 메시지 "Better Life, Smarter Choice"를 중심으로, SK의 레드와 오렌지를 포인트로 두고 네이비 · 브라운 · 웜 그레이 계열로 신뢰감 있는 프리미엄 톤을 맞췄습니다. 영문은 Montserrat, 국문은 Pretendard를 사용했습니다. 분양 요약 카드와 핵심 정보를 상단에 배치하고 상담 버튼을 화면에 고정해, 정보 탐색에서 상담까지 끊김 없이 이어지도록 설계했습니다.',
+    },
     results: site('personal/sk-view', {
       pc: [
         ['01-index.jpg', 'INDEX'],
