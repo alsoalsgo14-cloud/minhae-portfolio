@@ -7,6 +7,7 @@
 // · ratio: 이미지가 아직 없을 때 플레이스홀더 비율 ('가로/세로'). 이미지가 들어가면 무시됩니다.
 // · device: 'pc' | 'mo' → 상세 페이지에서 PC·MO 결과물을 나란히 배치
 // · null 은 화면에 "추후 입력"으로 표시됩니다. 확인되지 않은 정보는 null 로 두세요.
+// · false 로 두면 해당 항목(meta 한 줄 또는 sections 한 섹션)을 화면에서 아예 숨깁니다.
 // · section: 'work'(기본, SELECTED WORKS) | 'personal'(PERSONAL 섹션)
 //   같은 섹션 안에서는 배열 순서대로 표시됩니다.
 // ─────────────────────────────────────────────
@@ -161,8 +162,20 @@ export const projects = [
     preview: 'long',
     cover: { src: 'campaigns/beentrill-ajobyajo/pc.jpg' },
     keyImage: false,
-    meta: { ...emptyMeta, type: '기획전' },
-    sections: { ...emptySections },
+    meta: { ...emptyMeta, type: '기획전', kind: '기획전 배너', period: false, contribution: '90%' },
+    sections: {
+      ...emptySections,
+      purpose: false, // 작업 목적 숨김
+      tools: ['Adobe Photoshop', 'Figma'],
+      direction: [
+        '크라프트지·찢어진 종이·체크 원단·신문 콜라주를 겹쳐 스트리트 감성의 아카이브 무드 연출',
+        '아이보리·그레이 톤 바탕에 레드 포인트를 더해 쿠폰과 발매 정보 강조',
+        'DROPLIST 구성으로 티셔츠·볼캡·에코백을 카테고리별 그리드로 정리',
+        '바코드·스탬프·DROP 마크 등 태그 그래픽으로 한정 발매 컬래버레이션 분위기 표현',
+        '상품 소개에서 쿠폰 다운로드까지 이어지는 흐름으로 구매 동선 연결',
+        'PC·MO 환경에 맞춘 레이아웃과 이미지 비율 재구성',
+      ],
+    },
     results: [
       { label: 'BEENTRILL × AJOBYAJO — PC', device: 'pc', src: 'campaigns/beentrill-ajobyajo/pc.jpg', long: true },
       { label: 'BEENTRILL × AJOBYAJO — MO', device: 'mo', src: 'campaigns/beentrill-ajobyajo/mo.jpg', long: true },
@@ -178,8 +191,19 @@ export const projects = [
     // 카드: PC 배너 4개를 이어 붙여 호버 시 차례로 보여줌
     cover: { parts: bannerSets.map((b) => `${BN}/${b.id}-pc.jpg`) },
     keyImage: false,
-    meta: { ...emptyMeta, type: '기획전 배너' },
-    sections: { ...emptySections },
+    meta: { ...emptyMeta, type: '기획전 배너', kind: '기획전 배너', period: false, contribution: '90%' },
+    sections: {
+      ...emptySections,
+      purpose: false, // 작업 목적 숨김
+      tools: ['Adobe Photoshop', 'Figma'],
+      direction: [
+        '기획전마다 콘셉트에 맞는 컬러와 질감으로 각기 다른 무드 연출 — 메탈 텍스처와 민트(OUTLET COUPON DEAL), 얼음 질감의 3D 타이포와 블루(OUTLET WINTER), 흑백 배너 목업(CLEARANCE : STOCK-OUT), 아이보리 바탕의 레트로 포스터와 레드·옐로우(WWB BIG SALE)',
+        '대형 타이포그래피로 행사명과 할인율을 첫눈에 인지하도록 구성',
+        '기간·시간·쿠폰·리워드 등 세부 정보는 하단에 모아 정보 위계 구분',
+        '참여 브랜드 로고를 한 줄로 정렬해 멀티 브랜드 행사임을 표현',
+        'PC 1920px · MO 1080px 규격에 맞춰 레이아웃 재구성',
+      ],
+    },
     results: bannerSets.flatMap((b) => [
       { label: `${b.title} — PC`, device: 'pc', src: `${BN}/${b.id}-pc.jpg` },
       { label: `${b.title} — MO`, device: 'mo', src: `${BN}/${b.id}-mo.jpg` },

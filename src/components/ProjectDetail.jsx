@@ -105,7 +105,7 @@ export default function ProjectDetail({ project: p }) {
       <span className="dt__spark spark" aria-hidden="true" />
 
       <dl className="dt__meta">
-        {metaLabels.map((m) => (
+        {metaLabels.filter((m) => p.meta[m.key] !== false).map((m) => (
           <div key={m.key}>
             <dt>{m.label}</dt>
             <dd>{p.meta[m.key] || TBD}</dd>
@@ -120,7 +120,7 @@ export default function ProjectDetail({ project: p }) {
         </div>
       )}
 
-      {detailSections.map((sec) => (
+      {detailSections.filter((sec) => p.sections[sec.key] !== false).map((sec) => (
         <section className="dt__sec" key={sec.key} data-reveal>
           <header className="dt__sec-head rv">
             <p className="eyebrow">{sec.en}</p>
