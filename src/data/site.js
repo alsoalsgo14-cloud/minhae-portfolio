@@ -11,7 +11,9 @@ export const site = {
   logo: { src: null, alt: 'MINHAE' },
 
   role: 'Fashion Web Designer',
-  intro: '패션 브랜드의 기획전, 자사몰 배너, 상세페이지, SNS 콘텐츠를 만드는 웹디자이너입니다.',
+  // 메인 첫 화면 문구 — headline(h1, 굵게) / intro(h2, 보통 굵기)
+  headline: 'DESIGNING BRAND VISUALS.',
+  intro: '패션 브랜드의 무드를 발견하고, 감각적인 콘텐츠로 표현합니다.',
 
   nav: [
     { id: 'personal', label: 'PERSONAL' },
@@ -44,6 +46,8 @@ export const site = {
 
   // ABOUT — 문단은 배열 순서대로 표시 (첫 문단은 크게)
   about: {
+    // 프로필 사진 (images-src 기준). 없으면 null
+    photo: { src: 'about/profile.jpg', alt: '박민해 프로필 사진' },
     intro: [
       '평소 패션과 이미지에 관심이 많고, 좋아하는 감각을 디자인으로 표현하는 일을 해왔습니다.',
       '현재 패션 브랜드의 웹디자이너로 근무하며 자사몰 기획전과 배너, 상품 상세페이지, SNS 콘텐츠 등 온라인 디자인 전반을 담당하고 있습니다.',
@@ -141,5 +145,7 @@ export const site = {
   contact: [
     { label: 'EMAIL', value: 'alsoalsgo14@gmail.com', href: 'mailto:alsoalsgo14@gmail.com' },
     { label: 'INSTAGRAM', value: '@m.1nae_', href: 'https://www.instagram.com/m.1nae_/' },
+    // public/files 폴더의 PDF — 파일을 바꿀 땐 같은 이름으로 덮어쓰면 됩니다
+    { label: 'RESUME', value: 'PDF', href: './files/minhae-resume.pdf' },
   ],
 };

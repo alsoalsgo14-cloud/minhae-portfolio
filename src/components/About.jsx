@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { site } from '../data/site';
 import { useReveal } from '../lib/motion';
+import { resolveMedia } from '../lib/media';
 
 function Bullets({ items }) {
   if (!items?.length) return null;
@@ -28,15 +29,23 @@ function Block({ label, children, id }) {
 export default function About() {
   const root = useRef(null);
   useReveal(root);
-  const { intro = [], capabilities = [], experience = [], tools = [], education = [] } = site.about;
+  const { photo, intro = [], capabilities = [], experience = [], tools = [], education = [] } = site.about;
   const [lead, ...rest] = intro;
+  const pic = photo?.src ? resolveMedia(photo.src) : null;
 
   return (
     <section className="about" id="about" ref={root} aria-labelledby="about-title">
       <div className="about__grid" data-reveal>
-        <h2 id="about-title" className="eyebrow rv">
-          ABOUT
-        </h2>
+        <div className="about__side">
+          <h2 id="about-title" className="eyebrow rv">
+            ABOUT
+          </h2>
+          {pic && (
+            <figure className="about__photo rv">
+              <img src={pic.url} alt={photo.alt || ''} width={pic.w} height={pic.h} loading="lazy" />
+            </figure>
+          )}
+        </div>
         <div className="about__intro">
           {lead && <p className="about__statement rv">{lead}</p>}
           {rest.length > 0 && (

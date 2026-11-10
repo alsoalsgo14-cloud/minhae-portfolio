@@ -25,7 +25,7 @@ export default function Contact() {
                 <a
                   className="contact__row"
                   href={c.href}
-                  {...(c.href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}
+                  {...(c.href.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noreferrer' })}
                 >
                   {inner}
                 </a>

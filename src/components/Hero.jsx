@@ -112,8 +112,7 @@ export default function Hero() {
         <p className="hero__role">{site.role}</p>
       </div>
 
-      <h1 className="hero__logo">
-        <span className="sr-only">{site.name}</span>
+      <div className="hero__logo" role="img" aria-label={site.name}>
         <span className="hero__slices" aria-hidden="true">
           <span className="hero__slice hero__slice--top">
             <span className="hero__slice-in">
@@ -126,13 +125,14 @@ export default function Hero() {
             </span>
           </span>
         </span>
-      </h1>
+      </div>
 
       <div className="hero__band hero__band--bottom">
         {at('c')}
         {at('g')}
         <div className="hero__intro">
-          <p>{site.intro}</p>
+          <h1 className="hero__headline">{site.headline}</h1>
+          <h2 className="hero__sub">{site.intro}</h2>
           <a className="hero__cta" href="#work">
             VIEW WORK <span aria-hidden="true">↓</span>
           </a>

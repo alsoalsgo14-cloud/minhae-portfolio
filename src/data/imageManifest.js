@@ -1,5 +1,13 @@
 // 자동 생성 파일 — 직접 수정하지 마세요. (npm run images 로 다시 만들어집니다)
 export default {
+  "about/profile.jpg": {
+    "w": 150,
+    "h": 193,
+    "stamp": "13591-1794274879972",
+    "ow": 150,
+    "oh": 193,
+    "url": "images/about/profile.jpg"
+  },
   "ai-outfit/ai-outfit-01.jpg": {
     "w": 1536,
     "h": 2048,

@@ -60,7 +60,7 @@ export const projects = [
     title: 'HASHTAG RUSH',
     category: '기획전',
     specs: [`PC ${BANNER.pc}px`, `MO ${BANNER.mo}px`],
-    summary: null,
+    summary: "WWB '2026 HASHTAG RUSH' 프로모션 기획전 — 블랙·옐로우의 강렬한 캠페인 비주얼",
     // 카드 미리보기: 'long' = 긴 이미지가 호버 시 세로로 이동 / 'screen' = 브라우저 화면 미리보기
     preview: 'long',
     cover: { parts: HR_PC },
@@ -109,7 +109,7 @@ export const projects = [
     title: 'HAGO',
     category: '상세페이지 리디자인',
     specs: ['개인 작업'],
-    summary: null,
+    summary: 'HAGO 패션·잡화 상세페이지 리디자인 — 이미지 중심의 Product Story 구성',
     preview: 'screen',
     cover: { src: 'detail/hago/bag-wallet.jpg' },
     keyImage: false, // 키 비주얼 영역 숨김 (이미지가 생기면 { src: '...' } 로 변경)
@@ -158,13 +158,15 @@ export const projects = [
     title: 'BEENTRILL × AJOBYAJO',
     category: '기획전',
     specs: [`PC ${BANNER.pc}px`, `MO ${BANNER.mo}px`],
-    summary: null,
+    summary: '빈트릴 × 아조바이아조 26 S/S 컬래버레이션 런칭 기획전',
     preview: 'long',
     cover: { src: 'campaigns/beentrill-ajobyajo/pc.jpg' },
     keyImage: false,
     meta: { ...emptyMeta, type: '기획전', kind: '기획전 배너', period: false, contribution: '90%' },
     sections: {
       ...emptySections,
+      overview:
+        '빈트릴(BEENTRILL)과 아조바이아조(AJOBYAJO)의 26 S/S 컬래버레이션 런칭 기획전 디자인 프로젝트입니다. 티셔츠·볼캡·에코백으로 구성된 협업 컬렉션을 DROPLIST 형식으로 소개하고, 런칭 쿠폰 다운로드 영역까지 하나의 흐름으로 이어지도록 PC·MO 기획전 페이지를 제작했습니다.',
       purpose: false, // 작업 목적 숨김
       tools: ['Adobe Photoshop', 'Figma'],
       direction: [
@@ -186,7 +188,7 @@ export const projects = [
     title: 'PROMOTION BANNERS',
     category: '기획전 배너',
     specs: [`PC ${BANNER.pc}px`, `MO ${BANNER.mo}px`],
-    summary: null,
+    summary: '아울렛·클리어런스·빅세일 등 시즌 프로모션 기획전 메인 배너 4종',
     preview: 'long',
     // 카드: PC 배너 4개를 이어 붙여 호버 시 차례로 보여줌
     cover: { parts: bannerSets.map((b) => `${BN}/${b.id}-pc.jpg`) },
@@ -194,6 +196,8 @@ export const projects = [
     meta: { ...emptyMeta, type: '기획전 배너', kind: '기획전 배너', period: false, contribution: '90%' },
     sections: {
       ...emptySections,
+      overview:
+        'WWB 자사몰의 시즌 프로모션 기획전 메인 배너 디자인 프로젝트입니다. OUTLET COUPON DEAL, CLEARANCE : STOCK-OUT, OUTLET WINTER, WWB BIG SALE 등 행사마다 성격에 맞는 비주얼을 제작하고, 할인율과 행사 기간이 한눈에 들어오도록 PC 1920px · MO 1080px 규격으로 구성했습니다.',
       purpose: false, // 작업 목적 숨김
       tools: ['Adobe Photoshop', 'Figma'],
       direction: [
