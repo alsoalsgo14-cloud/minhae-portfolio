@@ -10,7 +10,7 @@ export const site = {
   // 다른 파일로 바꾸려면 src 에 경로 입력. 예: src: './images/logo/new-logo.svg'
   logo: { src: null, alt: 'MINHAE' },
 
-  role: 'Fashion Web Designer',
+  role: null, // 첫 화면 작은 글씨 (예: 'Fashion Web Designer'). null 이면 표시 안 함
   // 메인 첫 화면 문구 — headline(h1, 굵게) / intro(h2, 보통 굵기)
   headline: 'DESIGNING BRAND VISUALS.',
   intro: '패션 브랜드의 무드를 발견하고, 감각적인 콘텐츠로 표현합니다.',
@@ -49,9 +49,8 @@ export const site = {
     // 프로필 사진 (images-src 기준). 없으면 null
     photo: { src: 'about/profile.jpg', alt: '박민해 프로필 사진' },
     intro: [
-      '평소 패션과 이미지에 관심이 많고, 좋아하는 감각을 디자인으로 표현하는 일을 해왔습니다.',
       '현재 패션 브랜드의 웹디자이너로 근무하며 자사몰 기획전과 배너, 상품 상세페이지, SNS 콘텐츠 등 온라인 디자인 전반을 담당하고 있습니다.',
-      '브랜드마다 다른 분위기를 살리는 데 관심이 많아 SNS 피드 리뉴얼과 비주얼 가이드라인 제작에도 참여했으며, AI를 활용한 이미지 제작과 상품 연출컷 보정, 룩북 촬영 스타일링 및 현장 지원까지 다양한 업무를 경험했습니다.',
+      '브랜드마다 다른 분위기를 살리는 데 관심이 많아 SNS 피드 리뉴얼과 비주얼 가이드라인 제작에 참여했으며, AI를 활용한 이미지 제작과 상품 연출컷 보정, 룩북 촬영 스타일링 및 현장 지원 등까지 다양한 업무를 경험했습니다.',
       '주어진 작업을 완성하는 것에 그치지 않고, 어떻게 하면 상품이 더 매력적으로 보이고 브랜드의 분위기가 잘 전달될지 고민하며 작업합니다.',
     ],
     capabilities: [
@@ -85,7 +84,7 @@ export const site = {
         ],
       },
       {
-        company: '이전 회사',
+        company: '뉴킥코퍼레이션',
         role: '디자인팀 콘텐츠 디자이너',
         period: '2025.11 – 2026.05',
         desc: null,

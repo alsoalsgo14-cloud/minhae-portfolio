@@ -109,7 +109,7 @@ export default function Hero() {
     <section className="hero" id="top" ref={root} aria-label="MINHAE 소개">
       <div className="hero__band hero__band--top">
         {TOP.map(at)}
-        <p className="hero__role">{site.role}</p>
+        {site.role && <p className="hero__role">{site.role}</p>}
       </div>
 
       <div className="hero__logo" role="img" aria-label={site.name}>

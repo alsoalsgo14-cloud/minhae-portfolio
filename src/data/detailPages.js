@@ -9,7 +9,7 @@
 
 export const detailPagesInfo = {
   title: 'DETAIL PAGES',
-  desc: '현재 회사에서 작업한 상품 상세페이지입니다.',
+  desc: null, // 섹션 제목 아래 설명 (없으면 표시 안 함)
 };
 
 const D = 'detail/company';
