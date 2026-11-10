@@ -65,7 +65,12 @@ export const projects = [
     preview: 'long',
     cover: { parts: HR_PC },
     keyImage: { src: `${HR}/pc-main.gif` },
-    meta: { ...emptyMeta, type: '기획전' },
+    meta: {
+      type: '기획전',
+      kind: '기획전 배너 및 랜딩페이지',
+      period: '2026.10.28 – 11.02',
+      contribution: '80%',
+    },
     // 문자열 = 문단 / 배열 = 목록 / { text, items } = 문단 + 목록
     sections: {
       overview:
@@ -119,7 +124,7 @@ export const projects = [
       type: '상세페이지 리디자인',
       kind: '개인 작업',
       contribution: '기획 · 디자인 100%',
-      // period(기간)는 확인 후 입력
+      period: false, // 기간 숨김
     },
     sections: {
       overview:
@@ -231,7 +236,7 @@ export const projects = [
       type: '웹사이트 리디자인',
       kind: '개인 작업',
       period: '2025.07',
-      // contribution(기여도)은 확인 후 입력
+      contribution: '100%',
     },
     sections: {
       overview:
@@ -239,7 +244,7 @@ export const projects = [
       purpose:
         '기존 사이트를 진단한 결과 와이드 해상도 대응 미흡, 작은 글자와 불명확한 위계로 인한 정보 전달력 저하, 정돈되지 않은 컬러 시스템, 좌측 고정 LNB로 좁아진 서브페이지, 낮은 이미지 품질이 문제로 드러났습니다. 시즌 메뉴와 매장 정보를 빠르게 찾을 수 있고, 커피 한 잔의 경험이 사이트 안에서도 이어지도록 사용자 중심으로 재설계하는 것을 목표로 했습니다.',
       role: '사용성 진단 · 페르소나 설정 · AS IS / GAP / TO BE 개선안 도출 · 컬러와 서체 시스템 정의 · 메인과 서브페이지 PC / MO UI 디자인',
-      tools: [], // 사용 툴 확인 후 입력. 예: ['Figma', 'Photoshop']
+      tools: ['Figma', 'Adobe Photoshop'],
       direction:
         'Consistency(브랜드 감성과 사용자 경험의 일관된 전달), Clarity(명확하고 직관적인 정보 구조), Emotion(프리미엄 감성과 따뜻한 분위기)을 세 가지 축으로 잡았습니다. 할리스 레드를 포인트로 크림과 브라운 톤을 더해 따뜻한 분위기를 만들고, 영문은 Archopada, 국문은 Noto Sans KR을 16px 이상으로 사용해 가독성을 확보했습니다. 반응형 레이아웃과 우선순위 기반의 비대칭 배치로 콘텐츠 집중도를 높였습니다.',
     },
@@ -280,7 +285,7 @@ export const projects = [
       type: '웹사이트 리디자인',
       kind: '개인 작업',
       period: '2025.08',
-      // contribution(기여도)은 확인 후 입력
+      contribution: '100%',
     },
     sections: {
       overview:
@@ -288,7 +293,7 @@ export const projects = [
       purpose:
         '기존 사이트는 비주얼 중심 구성으로 분양 일정 · 평면 · 가격 같은 핵심 정보가 스크롤 아래로 밀리고, 깊은 메뉴 구조와 흩어진 상담 버튼, 모바일과 데스크톱 도메인 분리로 원하는 정보에 도달하기 어려웠습니다. "복잡한 여정을 단순하게, 더 빠른 길로 연결하다"를 목표로 분양 · 입주 · 상담 같은 주요 행동을 최소한의 클릭으로 할 수 있도록 재구성했습니다. (기대 효과: 모바일 이탈률 -15%, 상담 전환율 +20%, 정보 도달 시간 -30%)',
       role: '현황 분석과 벤치마킹 · 페르소나 4종과 사용자 여정 맵 작성 · 정보 구조(IA) 재설계 · 컬러와 서체 시스템 정의 · 메인과 서브페이지 PC / MO UI 디자인',
-      tools: [], // 사용 툴 확인 후 입력. 예: ['Figma', 'Photoshop']
+      tools: ['Figma', 'Adobe Photoshop'],
       direction:
         '브랜드 메시지 "Better Life, Smarter Choice"를 중심으로, SK의 레드와 오렌지를 포인트로 두고 네이비 · 브라운 · 웜 그레이 계열로 신뢰감 있는 프리미엄 톤을 맞췄습니다. 영문은 Montserrat, 국문은 Pretendard를 사용했습니다. 분양 요약 카드와 핵심 정보를 상단에 배치하고 상담 버튼을 화면에 고정해, 정보 탐색에서 상담까지 끊김 없이 이어지도록 설계했습니다.',
     },
@@ -310,22 +315,6 @@ export const projects = [
         ['06-support.jpg', '고객센터'],
       ],
     }),
-  },
-  {
-    id: 'sns-renewal',
-    title: 'SNS RENEWAL',
-    category: 'SNS',
-    specs: [],
-    summary: null,
-    preview: 'long',
-    cover: { ratio: '1080/3240', src: null },
-    meta: { ...emptyMeta },
-    sections: { ...emptySections },
-    results: [
-      { label: 'SNS 피드 01', ratio: '1080/1350', src: null },
-      { label: 'SNS 피드 02', ratio: '1080/1350', src: null },
-      { label: 'SNS 피드 그리드', ratio: '1080/3240', src: null, long: true },
-    ],
   },
 ];
 

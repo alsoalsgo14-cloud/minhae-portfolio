@@ -43,8 +43,9 @@ const lookbook = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 // AI 인스타 피드용 (image lab/ai outfit/인스타 피드용 12 ~ 34 → feed-01 ~ 11)
+// 배열 순서 = 화면 순서 (SNS FEED 01, 02 … 번호는 순서대로 매겨짐)
 const feedFiles = [
-  'feed-01.jpg', 'feed-02.png', 'feed-03.png', 'feed-04.png', 'feed-05.png', 'feed-06.jpg',
+  'feed-03.png', 'feed-02.png', 'feed-01.jpg', 'feed-04.png', 'feed-05.png', 'feed-06.jpg',
   'feed-07.png', 'feed-08.png', 'feed-09.png', 'feed-10.jpg', 'feed-11.jpg',
 ];
 const feed = feedFiles.map((f, i) => ({
@@ -87,4 +88,17 @@ function interleave(...lists) {
   return out;
 }
 
-export const imageLab = interleave(ai, lookbook, retouch, feed, personal);
+// ALL 에서 두 항목의 자리를 맞바꾸기 [id, id]
+const swaps = [['lookbook-01', 'personal-01']];
+
+function applySwaps(list) {
+  const out = [...list];
+  swaps.forEach(([a, b]) => {
+    const i = out.findIndex((x) => x.id === a);
+    const j = out.findIndex((x) => x.id === b);
+    if (i > -1 && j > -1) [out[i], out[j]] = [out[j], out[i]];
+  });
+  return out;
+}
+
+export const imageLab = applySwaps(interleave(ai, lookbook, retouch, feed, personal));
