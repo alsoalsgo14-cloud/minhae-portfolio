@@ -42,21 +42,104 @@ export const site = {
     { slot: 'd', project: 'promotion-banners', label: 'CLEARANCE : STOCK-OUT', ratio: '1080/1557', depth: 1.4, src: 'hero/clearance-mockup.jpg' },
   ],
 
+  // ABOUT — 문단은 배열 순서대로 표시 (첫 문단은 크게)
   about: {
-    statement:
-      '패션 브랜드의 기획전, 자사몰 배너, 상세페이지, SNS 콘텐츠를 디자인합니다. AI 이미지와 보정 작업으로 캠페인 비주얼까지 함께 만듭니다.',
-    capabilities: ['기획전', '자사몰 배너', '상세페이지', 'SNS 콘텐츠', 'AI 이미지 · 보정'],
-    details: [
-      { label: 'EXPERIENCE', value: null },
-      { label: 'TOOLS', value: null },
-      { label: 'EDUCATION', value: null },
+    intro: [
+      '평소 패션과 이미지에 관심이 많고, 좋아하는 감각을 디자인으로 표현하는 일을 해왔습니다.',
+      '현재 패션 브랜드의 웹디자이너로 근무하며 자사몰 기획전과 배너, 상품 상세페이지, SNS 콘텐츠 등 온라인 디자인 전반을 담당하고 있습니다.',
+      '브랜드마다 다른 분위기를 살리는 데 관심이 많아 SNS 피드 리뉴얼과 비주얼 가이드라인 제작에도 참여했으며, AI를 활용한 이미지 제작과 상품 연출컷 보정, 룩북 촬영 스타일링 및 현장 지원까지 다양한 업무를 경험했습니다.',
+      '주어진 작업을 완성하는 것에 그치지 않고, 어떻게 하면 상품이 더 매력적으로 보이고 브랜드의 분위기가 잘 전달될지 고민하며 작업합니다.',
+    ],
+    capabilities: [
+      '기획전 · 프로모션 디자인',
+      '자사몰 배너 · 이벤트 비주얼',
+      '상품 상세페이지 · 콘텐츠 구성',
+      'SNS 콘텐츠 · 피드 리뉴얼',
+      'AI 이미지 생성 · 리터칭',
+      '브랜드 비주얼 가이드라인',
+      '룩북 · 스타일링 콘텐츠',
+      '촬영 디렉션 · 현장 지원',
+      'PC · MO 웹 콘텐츠 최적화',
+      '온라인 마케팅 디자인',
+      '그래픽 · 타이포그래피 디자인',
+      '이미지 편집 · 누끼 · 합성',
+    ],
+    experience: [
+      {
+        company: 'WWB',
+        role: '웹디자이너',
+        period: '2026.05 – 재직중',
+        desc: '빈트릴(BEENTRILL), VOLCOM 등 패션 브랜드 자사몰 디자인 및 운영',
+        items: [
+          '시즌별 프로모션 및 대형 기획전 메인·서브 배너 제작',
+          'PC·MO 상세페이지 및 이벤트 콘텐츠 디자인',
+          'SNS 피드 리뉴얼 및 브랜드 비주얼 가이드라인 구축',
+          'AI 이미지 생성 및 상품 연출컷 제작·보정',
+          '룩북 촬영 착장 구성 및 촬영 현장 지원',
+          '상품 이미지 편집, 리사이징 및 웹사이트 유지보수',
+          '프로모션 기획안 및 협업용 Google Slides 제작',
+        ],
+      },
+      {
+        company: '이전 회사',
+        role: '디자인팀 콘텐츠 디자이너',
+        period: '2025.11 – 2026.05',
+        desc: null,
+        items: [
+          '광고·마케팅 관련 클라이언트 디자인 콘텐츠 제작',
+          '상세페이지, 이벤트 배너, 블로그 스킨 및 푸터 디자인',
+          '월평균 120건 이상의 디자인 업무 수행',
+          '다양한 브랜드의 디자인 가이드에 맞춘 콘텐츠 제작 및 운영',
+        ],
+      },
+    ],
+    // [이름, 설명] — 설명이 없으면 이름만
+    tools: [
+      {
+        group: 'DESIGN',
+        items: [
+          ['Adobe Photoshop', '이미지 보정, 합성, 누끼, 상세페이지 및 배너 제작'],
+          ['Adobe Illustrator', '그래픽, 로고, 아이콘 및 타이포그래피 제작'],
+          ['Figma', '웹 화면 구성, 시안 제작 및 협업'],
+        ],
+      },
+      {
+        group: 'AI CREATIVE',
+        items: [
+          ['ChatGPT', '디자인 기획 및 이미지 프롬프트 작성'],
+          ['Higgsfield / Gemini / kive', 'AI 이미지 및 비주얼 콘텐츠 제작'],
+        ],
+      },
+      {
+        group: 'WEB',
+        items: [['HTML / CSS / JavaScript / jQuery'], ['Cafe24', '자사몰 운영 및 콘텐츠 관리']],
+      },
+      {
+        group: 'DOCUMENT',
+        items: [
+          ['Notion', '일정 관리 및 업무 진행 현황 관리'],
+          ['Google Sheets', '업무 현황·자료 정리 및 데이터 관리'],
+          ['Google Slides', '기획안 및 디자인 제안 자료 제작'],
+        ],
+      },
+    ],
+    education: [
+      {
+        school: '대학교',
+        major: '도자·유리 전공',
+        period: '2024.02 졸업',
+        items: [
+          '재료의 특성과 조형적 요소를 활용한 디자인 및 제작 경험',
+          '형태, 색상, 질감에 대한 시각적 관찰과 표현 능력 습득',
+          '기획부터 제작, 결과물 완성까지의 디자인 프로세스 경험',
+        ],
+      },
     ],
   },
 
-  // href 가 있으면 링크로, 없으면 텍스트로 표시됩니다.
+  // href 가 있으면 링크로, 없으면 텍스트로 표시됩니다. 줄을 지우면 화면에서도 사라집니다.
   contact: [
-    { label: 'EMAIL', value: null, href: null },
-    { label: 'INSTAGRAM', value: null, href: null },
-    { label: 'RESUME', value: null, href: null },
+    { label: 'EMAIL', value: 'alsoalsgo14@gmail.com', href: 'mailto:alsoalsgo14@gmail.com' },
+    { label: 'INSTAGRAM', value: '@m.1nae_', href: 'https://www.instagram.com/m.1nae_/' },
   ],
 };

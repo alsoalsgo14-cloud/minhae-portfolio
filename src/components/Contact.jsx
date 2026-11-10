@@ -22,7 +22,11 @@ export default function Contact() {
           return (
             <li key={c.label}>
               {c.href ? (
-                <a className="contact__row" href={c.href} target="_blank" rel="noreferrer">
+                <a
+                  className="contact__row"
+                  href={c.href}
+                  {...(c.href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}
+                >
                   {inner}
                 </a>
               ) : (
