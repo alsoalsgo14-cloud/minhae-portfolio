@@ -7,6 +7,25 @@ import { ratioOf, resolveMedia, stackRatio } from '../lib/media';
 
 const TBD = <span className="tbd">추후 입력</span>;
 
+/** 문자열 → 문단 / 배열 → 목록 / { text, items } → 문단 + 목록 */
+function RichText({ value, className = 'dt__text' }) {
+  if (!value || (Array.isArray(value) && !value.length)) return TBD;
+  if (typeof value === 'string') return <p className={className}>{value}</p>;
+  const items = Array.isArray(value) ? value : value.items || [];
+  return (
+    <>
+      {!Array.isArray(value) && value.text && <p className={className}>{value.text}</p>}
+      {items.length > 0 && (
+        <ul className="dt__list">
+          {items.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+
 function SectionBody({ p, k }) {
   const s = p.sections;
   if (k === 'role') {
@@ -14,7 +33,9 @@ function SectionBody({ p, k }) {
       <dl className="dt__pairs">
         <div>
           <dt>담당 범위</dt>
-          <dd>{s.role || TBD}</dd>
+          <dd>
+            <RichText value={s.role} className="dt__role" />
+          </dd>
         </div>
         <div>
           <dt>사용 툴</dt>
@@ -33,7 +54,7 @@ function SectionBody({ p, k }) {
       </dl>
     );
   }
-  return <p className="dt__text">{s[k] || TBD}</p>;
+  return <RichText value={s[k]} />;
 }
 
 /** 프로젝트 상세 공통 틀 — 모든 프로젝트가 같은 구성을 사용합니다. */
@@ -115,8 +136,13 @@ export default function ProjectDetail({ project: p }) {
         <header className="dt__sec-head dt__sec-head--wide" data-reveal>
           <p className="eyebrow rv">RESULTS</p>
           <h2 id="results-title" className="rv">
-            전체 결과물
+            최종 결과물
           </h2>
+          {p.resultsNote?.length > 0 && (
+            <div className="dt__results-note rv">
+              <RichText value={p.resultsNote} />
+            </div>
+          )}
         </header>
         {p.resultsLayout === 'site' ? (
           // 웹사이트: PC 화면 묶음 → MOBILE 화면 묶음

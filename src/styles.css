@@ -1269,6 +1269,38 @@ img.logo {
   line-height: 1.7;
   max-width: 34em;
 }
+.dt__list {
+  font-family: var(--f-kr);
+  font-size: var(--fs-l);
+  line-height: 1.6;
+  max-width: 34em;
+  display: grid;
+  gap: 0.55em;
+}
+.dt__text + .dt__list,
+.dt__role + .dt__list {
+  margin-top: 1em;
+}
+.dt__list li {
+  position: relative;
+  padding-left: 1.1em;
+}
+.dt__list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dt__pairs dd .dt__list,
+.dt__pairs dd .dt__role {
+  font-size: var(--fs-m, 16px);
+}
+.dt__role {
+  line-height: 1.6;
+}
+.dt__results-note {
+  margin-top: clamp(20px, 3vw, 40px);
+}
 .dt__pairs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

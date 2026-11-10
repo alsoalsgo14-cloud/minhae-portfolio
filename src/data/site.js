@@ -38,8 +38,8 @@ export const site = {
     { slot: 'c', project: 'beentrill-ajobyajo', label: 'BEENTRILL × AJOBYAJO', ratio: '1/1', depth: 0.9, src: 'campaigns/beentrill-ajobyajo/pc.jpg', focus: 'top' },
     { slot: 'g', project: 'hollys', label: 'HOLLYS', ratio: '16/9', depth: 1.3, src: 'hero/hollys-mockup.jpg' },
     { slot: 'h', project: 'sk-view', label: 'SK VIEW', ratio: '3700/2290', depth: 1.1, src: 'hero/sk-view-mockup.jpg' },
-    // MO 메인(가로 1080px) 원본 비율 그대로 — 잘리지 않음
-    { slot: 'd', project: 'hashtag-rush', label: 'HASHTAG RUSH', ratio: '1080/1246', depth: 1.4, src: 'campaigns/hashtag-rush/mo-main.gif' },
+    // CLEARANCE : STOCK-OUT 기획전 배너 목업 — 원본 비율 그대로
+    { slot: 'd', project: 'promotion-banners', label: 'CLEARANCE : STOCK-OUT', ratio: '1080/1557', depth: 1.4, src: 'hero/clearance-mockup.jpg' },
   ],
 
   about: {

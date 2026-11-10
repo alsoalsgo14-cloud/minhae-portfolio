@@ -893,6 +893,15 @@ export default {
     "url": "images/hero/ai-street.jpg",
     "thumb": "images/hero/ai-street-thumb.jpg"
   },
+  "hero/clearance-mockup.jpg": {
+    "w": 1080,
+    "h": 1557,
+    "stamp": "229456-1794269643620",
+    "ow": 1080,
+    "oh": 1557,
+    "url": "images/hero/clearance-mockup.jpg",
+    "thumb": "images/hero/clearance-mockup-thumb.jpg"
+  },
   "hero/hollys-mockup.jpg": {
     "w": 7680,
     "h": 4319,
