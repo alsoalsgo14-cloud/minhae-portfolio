@@ -6,6 +6,9 @@
 export const site = {
   name: 'MINHAE',
 
+  // 방문자 분석 — Google Analytics 4 측정 ID (예: 'G-AB12CD34EF'). null 이면 꺼짐
+  analytics: { ga4: 'G-ZLZLVKYMW3' },
+
   // 로고: 기본은 src/assets/minhae-logo.svg (벡터, 배경에 따라 흑/백 자동)
   // 다른 파일로 바꾸려면 src 에 경로 입력. 예: src: './images/logo/new-logo.svg'
   logo: { src: null, alt: 'MINHAE' },

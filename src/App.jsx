@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { projects } from './data/projects';
 import { site } from './data/site';
 import { ScrollTrigger, prefersReducedMotion } from './lib/motion';
+import { trackPage } from './lib/analytics';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Works from './components/Works';
@@ -34,6 +35,11 @@ export default function App() {
     window.addEventListener('hashchange', on);
     return () => window.removeEventListener('hashchange', on);
   }, []);
+
+  // 방문자 분석: 메인 / 프로젝트 상세가 바뀔 때 페이지뷰 1회
+  useEffect(() => {
+    trackPage(project ? `/project/${project.id}` : '/', project ? `${project.title} — ${site.name}` : `${site.name} Portfolio`);
+  }, [project?.id]);
 
   const firstLoad = useRef(true);
 

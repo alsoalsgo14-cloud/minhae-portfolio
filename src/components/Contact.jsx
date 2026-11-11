@@ -1,5 +1,6 @@
 import { site } from '../data/site';
 import Logo from './Logo';
+import { trackEvent } from '../lib/analytics';
 
 export default function Contact() {
   return (
@@ -26,6 +27,7 @@ export default function Contact() {
                   className="contact__row"
                   href={c.href}
                   {...(c.href.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noreferrer' })}
+                  onClick={() => trackEvent('contact_click', { link_label: c.label })}
                 >
                   {inner}
                 </a>
