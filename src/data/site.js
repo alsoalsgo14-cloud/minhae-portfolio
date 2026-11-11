@@ -73,7 +73,7 @@ export const site = {
     ],
     experience: [
       {
-        company: 'WWB',
+        company: '월드와이드브랜즈(WWB)',
         role: '웹디자이너',
         period: '2026.05 – 재직중',
         desc: '빈트릴(BEENTRILL), VOLCOM 등 패션 브랜드 자사몰 디자인 및 운영',
