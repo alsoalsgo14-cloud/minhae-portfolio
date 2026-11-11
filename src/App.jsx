@@ -90,8 +90,8 @@ export default function App() {
           <Works section="personal" id="personal" title="PERSONAL" desc="개인 작업 — 웹사이트 · 상세페이지 리디자인" />
           <ImageLab />
           <DetailPages />
-          <Store />
           <Works section="work" id="work" title="SELECTED WORKS" />
+          <Store />
           <About />
         </main>
       )}

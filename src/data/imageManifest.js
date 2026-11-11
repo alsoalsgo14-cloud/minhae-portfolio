@@ -1762,5 +1762,14 @@ export default {
     "oh": 1440,
     "url": "images/store/sns/wwb-crew.jpg",
     "thumb": "images/store/sns/wwb-crew-thumb.jpg"
+  },
+  "store/pop/summer-sale-v.jpg": {
+    "w": 3508,
+    "h": 4961,
+    "stamp": "9587524-1794383783256",
+    "ow": 2000,
+    "oh": 2828,
+    "url": "images/store/pop/summer-sale-v.jpg",
+    "thumb": "images/store/pop/summer-sale-v-thumb.jpg"
   }
 };

@@ -25,7 +25,7 @@ export const storeGroups = [
     items: [
       { id: 'pop-sample-sale', title: 'SAMPLE SALE', note: 'VOLCOM 성수 · 매장 포스터', src: `${P}/sample-sale.jpg` },
       { id: 'pop-garage-sale', title: 'WWB GARAGE SALE', note: '패밀리 세일 포스터', src: `${P}/garage-sale.jpg` },
-      { id: 'pop-summer-sale', title: 'SUMMER SALE', note: 'VOLCOM 성수 · 가로형 POP', src: `${P}/summer-sale.jpg`, fit: 'contain' },
+      { id: 'pop-summer-sale', title: 'SUMMER SALE', note: 'VOLCOM 성수 · 매장 POP', src: `${P}/summer-sale-v.jpg` },
       { id: 'pop-receipt-b', title: 'RECEIPT EVENT', note: '영수증 이벤트 POP', src: `${P}/receipt-event-b.jpg` },
       { id: 'pop-workwear', title: 'VOLCOM WORKWEAR', note: '컬렉션 포스터', src: `${P}/workwear.jpg` },
       { id: 'pop-26ss-sale', title: '26SS SALE', note: '할인 POP', src: `${P}/26ss-sale.png` },
