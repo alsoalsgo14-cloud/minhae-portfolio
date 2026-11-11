@@ -1,11 +1,10 @@
 import { useRef, useState } from 'react';
 import { storeGroups, storeInfo } from '../data/store';
 import { useReveal } from '../lib/motion';
-import { ratioOf } from '../lib/media';
 import Placeholder from './Placeholder';
 import Lightbox from './Lightbox';
 
-/** STORE GRAPHICS — 매장 POP 포스터 · 인스타그램 피드/스토리 (원본 비율 그대로, 누르면 확대) */
+/** STORE GRAPHICS — 매장 POP 포스터 · 인스타그램 피드/스토리 (같은 크기 칸에 잘림 없이 배치, 누르면 확대) */
 export default function Store() {
   const root = useRef(null);
   const [open, setOpen] = useState(null); // { group, index }
@@ -41,7 +40,7 @@ export default function Store() {
                   aria-label={`${it.title} 크게 보기`}
                 >
                   <span className="st__img">
-                    <Placeholder ratio={ratioOf(it)} src={it.src} label={it.title} tone={i % 2 ? 'b' : 'a'} />
+                    <Placeholder src={it.src} label={it.title} fit="cover" />
                   </span>
                   <span className="st__cap">
                     <b>{it.title}</b>
