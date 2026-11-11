@@ -1604,5 +1604,163 @@ export default {
     "oh": 3000,
     "url": "images/retouch/before/DSC_6984.jpg",
     "thumb": "images/retouch/before/DSC_6984-thumb.jpg"
+  },
+  "ai-outfit/personal/personal-06.jpg": {
+    "w": 880,
+    "h": 1168,
+    "stamp": "1739675-1794380981242",
+    "ow": 880,
+    "oh": 1168,
+    "url": "images/ai-outfit/personal/personal-06.jpg"
+  },
+  "ai-outfit/personal/personal-07.jpg": {
+    "w": 880,
+    "h": 1168,
+    "stamp": "1685160-1794380981244",
+    "ow": 880,
+    "oh": 1168,
+    "url": "images/ai-outfit/personal/personal-07.jpg"
+  },
+  "ai-outfit/personal/personal-08.jpg": {
+    "w": 1122,
+    "h": 1402,
+    "stamp": "1933133-1794380981247",
+    "ow": 1122,
+    "oh": 1402,
+    "url": "images/ai-outfit/personal/personal-08.jpg",
+    "thumb": "images/ai-outfit/personal/personal-08-thumb.jpg"
+  },
+  "ai-outfit/personal/personal-09.png": {
+    "w": 2720,
+    "h": 1536,
+    "stamp": "8111325-1794380981251",
+    "ow": 2000,
+    "oh": 1129,
+    "url": "images/ai-outfit/personal/personal-09.jpg",
+    "thumb": "images/ai-outfit/personal/personal-09-thumb.jpg"
+  },
+  "ai-outfit/personal/personal-10.png": {
+    "w": 1792,
+    "h": 2400,
+    "stamp": "6505412-1794380981256",
+    "ow": 1792,
+    "oh": 2400,
+    "url": "images/ai-outfit/personal/personal-10.jpg",
+    "thumb": "images/ai-outfit/personal/personal-10-thumb.jpg"
+  },
+  "ai-outfit/personal/personal-11.jpg": {
+    "w": 880,
+    "h": 1168,
+    "stamp": "1714755-1794380981260",
+    "ow": 880,
+    "oh": 1168,
+    "url": "images/ai-outfit/personal/personal-11.jpg"
+  },
+  "store/pop/26ss-sale.png": {
+    "w": 1055,
+    "h": 1491,
+    "stamp": "2755884-1794380981296",
+    "ow": 1055,
+    "oh": 1491,
+    "url": "images/store/pop/26ss-sale.jpg",
+    "thumb": "images/store/pop/26ss-sale-thumb.jpg"
+  },
+  "store/pop/garage-sale.jpg": {
+    "w": 3508,
+    "h": 4961,
+    "stamp": "10927507-1794380981291",
+    "ow": 2000,
+    "oh": 2828,
+    "url": "images/store/pop/garage-sale.jpg",
+    "thumb": "images/store/pop/garage-sale-thumb.jpg"
+  },
+  "store/pop/receipt-event-a.png": {
+    "w": 1055,
+    "h": 1491,
+    "stamp": "3064246-1794380981266",
+    "ow": 1055,
+    "oh": 1491,
+    "url": "images/store/pop/receipt-event-a.jpg",
+    "thumb": "images/store/pop/receipt-event-a-thumb.jpg"
+  },
+  "store/pop/receipt-event-b.jpg": {
+    "w": 2480,
+    "h": 3508,
+    "stamp": "4683435-1794380981277",
+    "ow": 2000,
+    "oh": 2829,
+    "url": "images/store/pop/receipt-event-b.jpg",
+    "thumb": "images/store/pop/receipt-event-b-thumb.jpg"
+  },
+  "store/pop/sample-sale.jpg": {
+    "w": 2480,
+    "h": 3508,
+    "stamp": "4638945-1794380981263",
+    "ow": 2000,
+    "oh": 2829,
+    "url": "images/store/pop/sample-sale.jpg",
+    "thumb": "images/store/pop/sample-sale-thumb.jpg"
+  },
+  "store/pop/summer-sale.jpg": {
+    "w": 4961,
+    "h": 3508,
+    "stamp": "8856177-1794380981271",
+    "ow": 2000,
+    "oh": 1414,
+    "url": "images/store/pop/summer-sale.jpg",
+    "thumb": "images/store/pop/summer-sale-thumb.jpg"
+  },
+  "store/pop/workwear.jpg": {
+    "w": 3508,
+    "h": 4961,
+    "stamp": "5250379-1794380981283",
+    "ow": 2000,
+    "oh": 2828,
+    "url": "images/store/pop/workwear.jpg",
+    "thumb": "images/store/pop/workwear-thumb.jpg"
+  },
+  "store/sns/charlesrun-coupon.png": {
+    "w": 977,
+    "h": 1610,
+    "stamp": "1871979-1794380981300",
+    "ow": 977,
+    "oh": 1610,
+    "url": "images/store/sns/charlesrun-coupon.jpg"
+  },
+  "store/sns/daze-dayz-feed-01.jpg": {
+    "w": 1080,
+    "h": 1350,
+    "stamp": "2354081-1794380981305",
+    "ow": 1080,
+    "oh": 1350,
+    "url": "images/store/sns/daze-dayz-feed-01.jpg",
+    "thumb": "images/store/sns/daze-dayz-feed-01-thumb.jpg"
+  },
+  "store/sns/daze-dayz-feed-02.jpg": {
+    "w": 1080,
+    "h": 1350,
+    "stamp": "1376535-1794380981309",
+    "ow": 1080,
+    "oh": 1350,
+    "url": "images/store/sns/daze-dayz-feed-02.jpg",
+    "thumb": "images/store/sns/daze-dayz-feed-02-thumb.jpg"
+  },
+  "store/sns/daze-dayz-story.jpg": {
+    "w": 1080,
+    "h": 1920,
+    "stamp": "2409886-1794380981302",
+    "ow": 1080,
+    "oh": 1920,
+    "url": "images/store/sns/daze-dayz-story.jpg",
+    "thumb": "images/store/sns/daze-dayz-story-thumb.jpg"
+  },
+  "store/sns/wwb-crew.jpg": {
+    "w": 1092,
+    "h": 1440,
+    "stamp": "920609-1794380981312",
+    "ow": 1092,
+    "oh": 1440,
+    "url": "images/store/sns/wwb-crew.jpg",
+    "thumb": "images/store/sns/wwb-crew-thumb.jpg"
   }
 };

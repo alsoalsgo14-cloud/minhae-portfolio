@@ -695,6 +695,96 @@ img.logo {
   }
 }
 
+/* ── STORE GRAPHICS: POP 포스터 · 인스타 피드/스토리 ── */
+.st {
+  padding-top: var(--sec-gap);
+  padding-left: max(var(--gut), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gut), env(safe-area-inset-right, 0px));
+}
+.st__group {
+  margin-top: clamp(32px, 5vw, 72px);
+}
+.st__group-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: clamp(20px, 2.5vw, 32px);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: var(--fs-s);
+  letter-spacing: 0.02em;
+}
+.st__group-title span {
+  font-family: var(--f-mono);
+  font-weight: 400;
+}
+/* 원본 비율 그대로 쌓는 그리드 (세로·가로 포스터가 섞여도 잘리지 않음) */
+.st__grid {
+  columns: 4;
+  column-gap: var(--col-gap);
+}
+.st__grid--sns {
+  columns: 5;
+}
+.st__grid li {
+  break-inside: avoid;
+  margin-bottom: clamp(24px, 3vw, 44px);
+}
+.st__card {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: zoom-in;
+}
+.st__img {
+  display: block;
+  overflow: hidden;
+  background: var(--paper);
+}
+.st__img img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .st__card:hover .st__img img {
+    transform: scale(1.03);
+  }
+}
+.st__cap {
+  display: grid;
+  gap: 2px;
+  font-size: var(--fs-s);
+}
+.st__cap b {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: 0.01em;
+}
+.st__cap span {
+  color: var(--muted);
+  font-family: var(--f-kr);
+}
+@media (max-width: 1100px) {
+  .st__grid,
+  .st__grid--sns {
+    columns: 3;
+  }
+}
+@media (max-width: 700px) {
+  .st__grid,
+  .st__grid--sns {
+    columns: 2;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .st__img img {
+    transition: none;
+  }
+}
+
 /* ── Works ─────────────────────────────────── */
 .works {
   padding-top: var(--sec-gap);

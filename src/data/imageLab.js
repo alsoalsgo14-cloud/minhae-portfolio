@@ -56,7 +56,11 @@ const feed = feedFiles.map((f, i) => ({
   src: `ai-outfit/feed/${f}`,
 }));
 
-const personalFiles = ['personal-01.png', 'personal-02.jpg', 'personal-03.jpg', 'personal-04.png', 'personal-05.png'];
+const personalFiles = [
+  'personal-01.png', 'personal-02.jpg', 'personal-03.jpg', 'personal-04.png', 'personal-05.png',
+  // image lab/ai outfit/추가 (6장)
+  'personal-06.jpg', 'personal-07.jpg', 'personal-08.jpg', 'personal-09.png', 'personal-10.png', 'personal-11.jpg',
+];
 const personal = personalFiles.map((f, i) => ({
   id: `personal-${pad(i + 1)}`,
   group: 'personal',

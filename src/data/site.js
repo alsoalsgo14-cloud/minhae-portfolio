@@ -22,6 +22,7 @@ export const site = {
     { id: 'personal', label: 'PERSONAL' },
     { id: 'image-lab', label: 'IMAGE LAB' },
     { id: 'detail-pages', label: 'DETAIL' },
+    { id: 'store', label: 'STORE' },
     { id: 'work', label: 'WORK' },
     { id: 'about', label: 'ABOUT' },
     { id: 'contact', label: 'CONTACT' },

@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Works from './components/Works';
 import DetailPages from './components/DetailPages';
+import Store from './components/Store';
 import ImageLab from './components/ImageLab';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -89,6 +90,7 @@ export default function App() {
           <Works section="personal" id="personal" title="PERSONAL" desc="개인 작업 — 웹사이트 · 상세페이지 리디자인" />
           <ImageLab />
           <DetailPages />
+          <Store />
           <Works section="work" id="work" title="SELECTED WORKS" />
           <About />
         </main>
