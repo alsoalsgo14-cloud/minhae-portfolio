@@ -11,7 +11,7 @@
 export const storeInfo = {
   overline: 'STORE GRAPHICS',
   title: 'POP Posters,\nFeed & Story.', // \n = 줄바꿈
-  desc: '오프라인 매장 POP 포스터와 매장 인스타그램 피드·스토리 작업입니다.',
+  desc: '오프라인 매장 POP 포스터와 매장 인스타그램 피드·스토리 작업물',
 };
 
 const P = 'store/pop';
